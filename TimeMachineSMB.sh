@@ -1,5 +1,5 @@
 #!/bin/bash
-## Install Samba 4.8.0 for Time Machine
+## Compile From Source Current Stable Release Samba on Ubuntu Server 18.04.2 LTS 64Bits
 ## Author: Lionel Frey
 ## Version: 1.0
 
