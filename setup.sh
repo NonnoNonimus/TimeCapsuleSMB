@@ -1,6 +1,6 @@
 #!/bin/bash
 ## Compile From Source Current Stable Release Samba on Ubuntu Server 18.04.2 LTS 64Bits
-## Author: Lionel Frey
+## Author: Sergio C.
 ## Version: 1.0
 
 ## History
