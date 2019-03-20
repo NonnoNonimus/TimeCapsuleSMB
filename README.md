@@ -1,5 +1,3 @@
-# Original Code
-Lionel Frey SgtBauerFR/TimeMachine-SMB
-
 # TimeCapsuleSMB
-Install Current Stable Release Samba 4.10.0 for Time Machine
+Compile and install From Source Current Stable Release Samba on Ubuntu Server 18.04.2 LTS 64Bits
+Config Sharing folder for maOS Time Machine Support
