@@ -6,6 +6,6 @@ Config Sharing folder for macOS Time Machine Support
 # Usage
 git clone https://github.com/NonnoNonimus/TimeCapsuleSMB.git
 
-cd TimeCapsuleSMB
+cd TimeCapsuleSMB<br>
 chmod +x setup.sh
 /.setup.sh
