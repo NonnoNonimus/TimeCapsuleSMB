@@ -1,12 +1,8 @@
 #!/bin/bash
 ## Compile From Source Current Stable Release Samba on Ubuntu Server 18.04.2 LTS 64Bits
 ## Author: Sergio C.
-## Version: 1.0
 
-## History
-## 1.0 - Ok 16/04/18
-
-### Tested on Ubuntu Server LTS 16.04.04 64Bits
+### Tested on Ubuntu Server 18.04.2 LTS 64Bits
 
 if [ "$(whoami)" != "root" ]
 then
@@ -14,16 +10,17 @@ then
     exit
 fi
 
-echo "Tested on Mon Apr 16 2018
-Clean install of Ubuntu Server LTS 16.04.04 64Bits
+echo "Tested on Mon Apr 24 2019
+Clean install of Ubuntu Server LTS 18.04.2 64Bits
 Software selection:
 [*]- standard system utilities
 [*]- openSSH Server
 Post installation:
 apt upgrade
 
-Enjoy your new Time Machine !
-Lionel Frey"
+Enjoy your new Linux Based TimeCapsule !
+Thanks to the tribute of:
+Lionel Frey, Sergio C."
 
 read -s -n1 -p "Press Any Key to Continue..."; echo
 
@@ -34,10 +31,10 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_TYPE=en_US.UTF-8
 
-apt install -y libreadline-dev git build-essential libattr1-dev libblkid-dev 
-apt install -y autoconf python-dev python-dnspython libacl1-dev gdb pkg-config libpopt-dev libldap2-dev 
+apt install -y libreadline-dev git build-essential libattr1-dev libblkid-dev liblmdb-dev libgpgme-dev libjansson-dev libarchive-dev
+apt install -y autoconf python3-dev python-dnspython libacl1-dev gdb pkg-config libpopt-dev libldap2-dev
 apt install -y dnsutils acl attr libbsd-dev docbook-xsl libcups2-dev libgnutls28-dev
-apt install -y tracker libtracker-sparql-1.0-dev libpam0g-dev libavahi-client-dev libavahi-common-dev bison flex
+apt install -y tracker libtracker-sparql-2.0-dev libpam0g-dev libavahi-client-dev libavahi-common-dev bison flex
 apt install -y avahi-daemon
 
 sudo cat << EOF > /etc/avahi/services/timemachine.service
@@ -65,9 +62,9 @@ EOF
 #read -s -n1 -p "Press Any Key to Continue..."; echo
 
 cd /usr/src
-wget https://download.samba.org/pub/samba/stable/samba-4.8.0.tar.gz
-tar -xzvf samba-4.8.0.tar.gz
-cd samba-4.8.0
+wget https://download.samba.org/pub/samba/samba-4.9.5.tar.gz
+tar -xzvf samba-4.9.5.tar.gz
+cd samba-4.9.5
 
 #read -s -n1 -p "Press Any Key to Continue..."; echo
 
