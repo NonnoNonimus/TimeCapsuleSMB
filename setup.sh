@@ -31,6 +31,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_TYPE=en_US.UTF-8
 
+apt install -y libpython2.7-dev libpython3.7 libpython3-all-dev libpython-all-dev
 apt install -y libreadline-dev git build-essential libattr1-dev libblkid-dev liblmdb-dev libgpgme-dev libjansson-dev libarchive-dev
 apt install -y autoconf python3-dev python-dnspython libacl1-dev gdb pkg-config libpopt-dev libldap2-dev
 apt install -y dnsutils acl attr libbsd-dev docbook-xsl libcups2-dev libgnutls28-dev
