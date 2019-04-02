@@ -8,4 +8,4 @@ git clone https://github.com/NonnoNonimus/TimeCapsuleSMB.git
 
 cd TimeCapsuleSMB<br>
 chmod +x setup.sh<br>
-/.setup.sh
+./setup.sh
